@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Rugatha Timeline</title>
+<style>
+    *,*:after,*:before{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: arial;
+        font-size: 16px;
+        margin: 0;
+        background: #2B2C2F;
+        color: #fff;
+        overflow-x: hidden;
+    }
+    a{
+        color: inherit;
+    }
+    .intro{
+        background-color: #5f685e;
+        padding: 40px;
+        text-align: center;
+    }
+    .intro h1{
+        font-size: 46px;
+    }
+    .timeline ul{
+        padding: 50px 0;
+    }
+
+    .timeline ul li{
+        list-style: none;
+        position: relative;;
+        width: 6px;
+        margin: 0 auto;
+        padding-top: 50px;
+        background-color: #fff;
+    }
+    .timeline pre-dranison-era{
+        display: block;
+        font-size: 25px;
+        margin-bottom: 8px;
+        font-weight: 1000;
+        color: brown;
+    }
+    .timeline dranison-era{
+        display: block;
+        font-size: 25px;
+        margin-bottom: 8px;
+        font-weight: 1000;
+        color: lightblue;
+    }
+    .timeline trinix-era{
+        display: block;
+        font-size: 25px;
+        margin-bottom: 8px;
+        font-weight: 1000;
+        color: gold;
+    }
+    .timeline lothum-era{
+        display: block;
+        font-size: 25px;
+        margin-bottom: 8px;
+        font-weight: 1000;
+        color: greenyellow;
+    }
+    .timeline new-dranison-era{
+        display: block;
+        font-size: 25px;
+        margin-bottom: 8px;
+        font-weight: 1000;
+        color: violet;
+    }
+    .timeline event{
+        display: block;
+        font-size: 22px;
+        margin-bottom: 8px;
+        font-weight: 700;
+    }
+    .timeline pre-dranison-event{
+        display: block;
+        font-size: 22px;
+        margin-bottom: 8px;
+        font-weight: 700;
+        color: brown;
+    }
+    .timeline dranison-event{
+        display: block;
+        font-size: 22px;
+        margin-bottom: 8px;
+        color: lightblue;
+    }
+    .timeline trinix-event{
+        display: block;
+        font-size: 22px;
+        margin-bottom: 8px;
+        color: gold;
+    }
+    .timeline lothum-event{
+        display: block;
+        font-size: 22px;
+        margin-bottom: 8px;
+        color: greenyellow;
+    }
+    .timeline new-dranison-event{
+        display: block;
+        font-size: 22px;
+        margin-bottom: 8px;
+        color: violet;
+    }
+    .timeline ul li:after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        transition: all 0.5s;
+        background-color: inherit;
+        z-index: 1
+    }
+    .timeline ul li div{
+        position: relative;
+        bottom: 0;
+        width: 400px;
+        padding: 15px;
+        /*background-color: #f45b69;*/
+        transition: all 0.5s;
+        opacity:  0;
+    }
+    .timeline ul li:nth-child(odd) div{
+        left: 45px;
+        transform: translateX(200px);
+    }
+    .timeline ul li:nth-child(even) div{
+        left: calc(-400px - 45px + 6px);
+        transform: translateX(-200px);
+    }
+    .timeline ul li.in-view:after{
+        background-color: #5f685e;
+
+    }
+    .timeline ul li.in-view div{
+        transform: none !important;
+        opacity: 1;
+    }
+
+    @media screen and (max-width: 900px){
+        .timeline ul li div{
+            width: 250px;
+        }
+
+        .timeline ul li:nth-child(even) div{
+            left: calc(-250px - 45px - 6px)
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        .timeline ul li{
+            margin-left: 20px;
+        }
+        .timeline ul li div{
+            width: calc(100vw - 90px);
+        }
+        .timeline ul li:nth-child(even) div{
+            left: 45px;
+        }
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <section class="intro">
+        <h1><a href="https://rugatha.wordpress.com"><img src="https://imgur.com/GVlY6Pv.gif" alt="Rugatha logos 2024" width="100" height="100"></a></br>卓尼森簡史<br></h1>
+    </section>
+    <section class="timeline">
+        <ul>
+            <li>
+                <div>
+                    <p><dranison-era>卓尼森王朝</br>The Dranison Era</dranison-era> 1 - 3152 D.E.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p><dranison-event><a href="https://rugatha.wordpress.com/2021/06/16/1-d-e-the-rise-of-the-dranison/">The Rise of the Dranison</a></dranison-event>1 D.E.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p><trinix-era>崔尼斯王朝</br>The Trinixity Era</trinix-era> 3152 - 10758 D.E.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p><trinix-event><a href="https://rugatha.wordpress.com/2021/06/16/3152-d-e-the-start-of-trinixity/">The Start of Trinixity</a></trinix-event>3152 D.E.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p><lothum-era>洛森王朝</br>The Lothum Era</lothum-era> 10758 - 13462 D.E.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p><lothum-event><a href="https://rugatha.wordpress.com/2021/06/16/10758-d-e-elvish-invasion/">Elvish Invasion</a></lothum-event>10758 D.E.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p><lothum-event><a href="https://rugatha.wordpress.com/2023/04/06/the-rise-of-alfenor/">The Rise of Alfenor</a></lothum-event>10836 D.E.<br/>Apr. 2nd</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p><new-dranison-era>新卓尼森王朝</br>The New Dranison Era</new-dranison-era> 13462 D.E. -</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p><new-dranison-event><a href="https://rugatha.wordpress.com/2021/06/16/13462-d-e-dranison-renaissance/">Dranison Renaissance</a></new-dranison-event>13462 D.E.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p><new-dranison-event><a href="https://rugatha.wordpress.com/2021/06/17/15048-d-e-the-death-of-samick/">The Death of Samick</a></new-dranison-event>15048 D.E.<br/>Apr. 3rd</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p><new-dranison-event><a href="https://rugatha.wordpress.com/2021/07/14/15048-d-e-july-20th-the-disappearance-of-jasmine-warren/">The Disappearance of Jasmine</a></new-dranison-event>15048 D.E.<br/>Jul. 20th</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p><new-dranison-event><a href="https://rugatha.wordpress.com/2021/07/18/15048-d-e-july-23rd-the-armageddon-of-vowalon/">The Armageddon of Vowalon</a></new-dranison-event>15048 D.E.<br/>Jul. 23rd</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p><new-dranison-event><a href="https://rugatha.wordpress.com/2022/06/01/fire-of-the-trinix-theatre/">Fire of the Trinix Theatre</a></new-dranison-event>15048 D.E.<br/>Nov. 13rd</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p><new-dranison-event><a href="https://rugatha.wordpress.com/2022/06/13/the-macksohn-tournament-15048/">The Macksohn Tournament</a></new-dranison-event>15048 D.E.<br/>Nov. 14th</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+<script>
+    var items = document.querySelectorAll('.timeline li');
+
+    function elementInView(el){
+        var rect = el.getBoundingClientRect();
+
+        return(
+            rect.top>= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        )
+
+    }
+
+    function callBack(){
+        for(var i = 0; i < items.length; i++){
+            if(elementInView(items[i])){
+                items[i].classList.add("in-view")
+
+            }
+
+        }
+    }
+
+    window.onload = callBack;
+    window.onresize = callBack;
+    window.onscroll = callBack;
+
+</script>
+</body>
+</html>
